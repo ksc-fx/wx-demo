@@ -1,3 +1,28 @@
-<view class="btn-area">
-  <text>组件</text>
+<view class="page">
+  <view class="page-hd">
+    <image class="page-hd__img" src="../../../image/icon_component.png"></image>
+    <view class="page-hd__desc">
+      我是组件
+    </view>
+  </view>
+  <view class="page-bd">
+    <block wx:for="{{list}}" wx:key="id">
+      <view class="kind-item">
+        <view id="{{item.id}}" class="kind-item-hd {{item.open ? 'kind-item-hd--show' : ''}}" bindtap="kindToggle">
+          <view class="kind-item__text">{{item.name}}</view>
+          <image class="kind-item__img" src="../resources/kind/{{item.id}}.png"></image>
+        </view>
+        <view class="kind-item-bd {{item.open ? 'kind-item-bd--show' : ''}}">
+          <view class="navigator-box {{item.open ? 'navigator-box--show' : ''}}">
+            <block wx:for-items="{{item.pages}}" wx:for-item="page" wx:key="*item">
+              <navigator class="navigator" url="pages/{{page}}/{{page}}">
+                <view class="navigator__text">{{page}}</view>
+                <view class="navigator__arrow"></view>
+              </navigator>
+            </block>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
 </view>
