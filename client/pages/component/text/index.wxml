@@ -1,0 +1,5 @@
+<import src="../../../common/component/head/index.wxml" />
+
+<view>
+    <template is="head"></template>
+</view>
