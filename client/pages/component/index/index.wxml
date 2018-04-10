@@ -10,7 +10,7 @@
       <view class="kind-item">
         <view id="{{item.id}}" class="kind-item-hd {{item.open ? 'kind-item-hd--show' : ''}}" bindtap="kindToggle">
           <view class="kind-item__text">{{item.name}}</view>
-          <image class="kind-item__img" src="../resources/kind/{{item.id}}.png"></image>
+          <image class="kind-item__img" src="../../../image/component/{{item.id}}.png"></image>
         </view>
         <view class="kind-item-bd {{item.open ? 'kind-item-bd--show' : ''}}">
           <view class="navigator-box {{item.open ? 'navigator-box--show' : ''}}">
