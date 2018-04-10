@@ -1,4 +1,12 @@
 <view class="btn-area">
-  <text>测试测试</text>
+    <view>PageLifecycleFunction</view>
+    <block wx:for="{{pageLifecycleFunction}}" wx:key="*this">
+        <view>{{index}}: {{item}}</view>
+    </block>
+    <view>ES6 export-commonjs</view>
+    <block wx:for="{{testEs6Data}}" wx:key="*this">
+        <view>{{index}}: {{item}}</view>
+    </block>
+    
 </view>
 

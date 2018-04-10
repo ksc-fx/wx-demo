@@ -1,40 +1,51 @@
 // pages/component/index.js
 import { a, b, c } from './test-es6';
-console.log('Test es6 export-common');
-console.log(a, b, c);
 
 Page({
     /**
      * 页面的初始数据
      */
-    data: {},
+    data: {
+        pageLifecycleFunction: [],
+        testEs6Data: {
+            a,
+            b,
+            c
+        }
+    },
 
+    pushFunctionName(name) {
+        this.data.pageLifecycleFunction.push(name);
+        this.setData({
+            pageLifecycleFunction: this.data.pageLifecycleFunction
+        });
+    },
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function(options) {
-        console.log('page onload event');
+        this.pushFunctionName('onLoad');
     },
 
     /**
      * 生命周期函数--监听页面初次渲染完成
      */
     onReady: function() {
-        console.log('page onReady event');
+        this.pushFunctionName('onReady');
     },
 
     /**
      * 生命周期函数--监听页面显示
      */
     onShow: function() {
-        console.log('page onShow event');
+        this.pushFunctionName('onShow');
     },
 
     /**
      * 生命周期函数--监听页面隐藏
      */
     onHide: function() {
-        console.log('page onHide event');
+        this.pushFunctionName('onHide');
     },
 
     /**
@@ -60,6 +71,6 @@ Page({
     onShareAppMessage: function() {},
 
     onTabItemTap() {
-        console.log('page onTabItemTap event');
+        this.pushFunctionName('onTabItemTap');
     }
 });
