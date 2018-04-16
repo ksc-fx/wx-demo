@@ -5,5 +5,4 @@
 
 <view class="flexbox__dir_{{dir}} flexbox__justify_{{justify}} flexbox__align_{{align}}">
     <slot></slot>
-    <view>TESTTEST</view>
 </view>

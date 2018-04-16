@@ -1,0 +1,13 @@
+<import src="../../common/head/index.wxml" />
+<import src="../../common/foot/index.wxml" />
+
+<view class="pages-item__wrap">
+    <template is="head" data="{{title: 'button'}}"></template> 
+    <view class="pages-item__body">
+        <view class="pages-item__body__box">
+
+            
+        </view>
+    </view>
+    <template is="foot" data="{{title: 'progress'}}"></template>
+</view>

@@ -1,0 +1,6 @@
+<template name="head">
+    <flexBox class="page-head">
+        <view class="page-head__title">{{title}}</view>
+        <view class="page-head__line"></view>
+    </flexBox>
+</template>

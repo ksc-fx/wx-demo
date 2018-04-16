@@ -1,0 +1,7 @@
+<template name="foot">
+    <flexBox class="page-foot">
+        <navigator openType="switchTab" url="/page/component/index" hover-class="none">
+            <image class="page-foot__icon" src="../../../image/icon_foot.png"></image>
+        </navigator>
+    </flexBox>
+</template>
