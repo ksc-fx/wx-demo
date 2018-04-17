@@ -13,11 +13,11 @@
           <image class="kind-item__img" src="../../../image/api/{{item.id}}.png"></image>
         </view>
         <view class="kind-item-bd {{item.open ? 'kind-item-bd--show' : ''}}">
-        <view class="navigator-box {{item.open ? 'navigator-box-show' : ''}}">
+        <view class="navigator-box {{item.open ? 'navigator-box--show' : ''}}">
               <block wx:for-items="{{item.pages}}" wx:for-item="page" wx:key="*item">
-                <navigator url="{{page.url}}" class="navigator">
-                  <view class="navigator-text">{{page.zh}}</view>
-                  <view class="navigator-arrow"></view>
+                <navigator url="../{{page.url}}" class="navigator">
+                  <view class="navigator__text">{{page.zh}}</view>
+                  <view class="navigator__arrow"></view>
                 </navigator>
               </block>
             </view>
