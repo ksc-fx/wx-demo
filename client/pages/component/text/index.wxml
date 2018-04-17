@@ -1,5 +1,14 @@
-<import src="../../../common/component/head/index.wxml" />
+<import src="../../common/head/index.wxml" />
+<import src="../../common/foot/index.wxml" />
 
-<view>
-    <template is="head"></template>
+<view class="pages-item__wrap">
+    <template is="head" data="{{title: 'text'}}"></template> 
+    <view class="pages-item__body">
+        <view class="pages-item__body__box">
+            <text>{{text}}</text>
+        </view>
+        <button disabled="{{!canAdd}}" bindtap="addText">add line</button>
+        <button disabled="{{!canRemove}}" bindtap="removeText">remove line</button>
+    </view>
+    <template is="foot" data="{{title: 'text'}}"></template>
 </view>

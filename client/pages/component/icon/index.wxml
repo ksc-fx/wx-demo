@@ -1,0 +1,18 @@
+<import src="../../common/head/index.wxml" />
+<import src="../../common/foot/index.wxml" />
+
+<view class="pages-item__wrap">
+    <template is="head" data="{{title: 'icon'}}"></template> 
+    <view class="pages-item__body">
+        <view class="pages-item__body__box">
+            <block wx:for="{{iconTypes}}" wx:for-item="item" wx:for-index="index">
+                <view class="icon__wrap">
+                    <icon type="{{item.type}}" class="icon-{{index}} icon__type" size="60"></icon>
+                    <text class="icon__title">{{item.title}}</text>
+                    <text class="icon__text">用来干嘛啊的：{{item.type}}</text>
+                </view> 
+            </block>
+        </view>
+    </view>
+    <template is="foot"></template>
+</view>

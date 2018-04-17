@@ -3,8 +3,10 @@
         "pages/component/index/index",
         "pages/api/index/index",
         "pages/component/text/index",
-        "pages/test/index/index",
-        "pages/api/login/login"
+        "pages/component/icon/index",
+        "pages/component/progress/index",
+        "pages/api/login/login",
+        "pages/test/index/index"
     ],
     "window": {
         "backgroundColor": "#F6F6F6",

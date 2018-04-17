@@ -1,0 +1,22 @@
+<import src="../../common/head/index.wxml" />
+<import src="../../common/foot/index.wxml" />
+
+<view class="pages-item__wrap">
+    <template is="head" data="{{title: 'progress'}}"></template> 
+    <view class="pages-item__body">
+        <view class="pages-item__body__box">
+
+            <view class="progress-box">
+                <progress percent="20" show-info stroke-width="3"/>
+                progress需要给一个宽度
+            </view>
+            <progress percent="20" show-info />
+            <progress percent="30" show-info stroke-width="8" />
+            <progress percent="40" show-info stroke-width="10" />
+            <progress percent="50" show-info color="#ff0000" activeColor="#00ff00" backgroundColor="#666666"/>
+            <progress percent="60" show-info active="true"/>
+            <progress percent="70" show-info active-mode="forwards"/>
+        </view>
+    </view>
+    <template is="foot" data="{{title: 'progress'}}"></template>
+</view>

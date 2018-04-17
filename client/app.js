@@ -138,7 +138,7 @@ App({
         });
     },
     globalData: {
-        subDomain: 'guang',
+        subDomain: 'ks',
         token: false,
         uid: false
     }
