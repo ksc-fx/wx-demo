@@ -5,6 +5,7 @@
         "pages/component/text/index",
         "pages/component/icon/index",
         "pages/component/progress/index",
+        "pages/component/button/index",
         "pages/api/login/login",
         "pages/test/index/index"
     ],
